@@ -29,3 +29,23 @@ print("Done!")
 # Sometimes it is a little harder to be sure if a loop will terminate
 
 # definite loops 
+# These loops are called "Definite loops" because they exceute an exact number of times.
+# we say that "definite loops iterate through the members of a set"
+for i in [5,4,3,2,1]:
+    print(i)
+print('blastoff!')
+# Definite loops (for loops) have explicit iteration varuables that changes eact time through a loop. These iteration variables move through the sequence or set 
+friedns = ['Rio', 'Glen', 'Bisma']
+for friend in friedns :
+    print('Happy Graduation: ', friend)
+print('You guys are awesome!')
+
+# Loops Idioms: What we do in loops 
+smallest = None
+print(type(smallest))
+print("Before:", smallest)
+for itervar in [3, 41, 1, 9, 74, 15]:
+    if smallest is None or itervar < smallest:
+        smallest = itervar
+    print("Loop:", itervar, smallest)
+print("Smallest:", smallest) 
