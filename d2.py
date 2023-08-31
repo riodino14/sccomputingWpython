@@ -48,4 +48,46 @@ for itervar in [3, 41, 1, 9, 74, 15]:
     if smallest is None or itervar < smallest:
         smallest = itervar
     print("Loop:", itervar, smallest)
-print("Smallest:", smallest) 
+print("Smallest:", smallest)
+
+for i in range(1,11): # Menyetak angka dari 1 sampai 10 secara menurun 
+    print(i) 
+
+# Finding the average in a loop 
+count = 0 
+sum = 0 
+print('before', count, sum)
+for value in [9,41,12,3,74,15]:
+    count += 1 
+    sum = sum + value 
+    print(count, sum, value)
+print('after', count, sum, '\nAverage:', sum/count)
+
+
+# seacrh using a boolean variable
+# if we just want to search and know if a value was found, 
+# we use a variables that starts at False and is set to True as soon as we find what we are looking for.
+found = False 
+print('Before', found)
+for value in [9,41,12,3,74,15] : 
+    if value == 3 :
+        found = True 
+    print(found, value)
+print('After', found)
+
+# Finding the smallest value 
+smallest = None 
+print('Before', smallest)
+for value in [9,41,12,3,74,15]:
+    if smallest is None :
+        smallest = value
+    elif value < smallest :   # change < to > if we want to find the largest value and change the var smallest to largest to make it clearer 
+        smallest = value 
+    print(smallest, value)
+print('After', smallest)
+
+# The 'is' and 'is not' operators. Is -> the type and value must be equal 
+# ex: 0 == 0.00 (True) | 0 is 0.00 (False) 
+# - can be used in logical expressions 
+# - imples "is the same as"
+# - similiar tio, but stronger than == 
